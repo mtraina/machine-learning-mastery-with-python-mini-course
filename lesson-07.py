@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Jul  9 12:16:33 2018
-
-@author: A999774
-"""
 
 # Evaluate using Cross-Validation
 from pandas import read_csv
@@ -11,7 +6,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LogisticRegression
 
-url = 'C:\\Users\\A999774\\dev\\projects\\python\\ml\\data\\pima-indians-diabetes.data.csv'
+url = './data/pima-indians-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
 array = dataframe.values

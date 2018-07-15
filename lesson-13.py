@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jul 10 15:23:08 2018
-
-@author: A999774
-"""
 
 # Save Model Using Pickle
 from pandas import read_csv
@@ -11,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import pickle
 
-url = 'C:\\Users\\A999774\\dev\\projects\\python\\ml\\data\\pima-indians-diabetes.data.csv'
+url = './data/pima-indians-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
 array = dataframe.values
