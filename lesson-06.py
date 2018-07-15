@@ -1,9 +1,15 @@
-# Standardize data (0 mean, 1 stdev)
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
 from sklearn.preprocessing import StandardScaler
 from pandas import read_csv
 import numpy
 
-url = 'data/pima-indians-diabetes.data.1.csv'
+url = 'C:\\Users\\A999774\\dev\\projects\\python\\ml\\data\\pima-indians-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
 array = dataframe.values
@@ -12,9 +18,6 @@ X = array[:,0:8]
 Y = array[:,8]
 scaler = StandardScaler().fit(X)
 rescaledX = scaler.transform(X)
-
-print(rescaledX[0])
-
 # summarize transformed data
-#numpy.set_printoptions(precision=3)
-#print(rescaledX[0:5,:])
+numpy.set_printoptions(precision=3)
+print(rescaledX[0:5,:])
