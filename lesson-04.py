@@ -1,7 +1,7 @@
 # Statistical Summary
 from pandas import read_csv
 
-url = 'https://goo.gl/bDdBiA'
+url = './data/pima-indians-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 data = read_csv(url, names=names)
 description = data.describe()

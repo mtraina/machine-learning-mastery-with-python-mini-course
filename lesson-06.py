@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from pandas import read_csv
 import numpy
 
-url = 'C:\\Users\\A999774\\dev\\projects\\python\\ml\\data\\pima-indians-diabetes.data.csv'
+url = './data/pima-indians-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
 array = dataframe.values
